@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'Alte DIN';
+    src: url('../fonts/Din-Regular.otf')  format('truetype');
+}
+
+@font-face {
+    font-family: "DIN Pro Medium";
+    src: url('../fonts/DINNextLTPro-Medium.otf');
+}
+
+@font-face {
+    font-family: "DIN Pro Next";
+    src: url('../fonts/DINNextLTPro-Heavy.otf');
+}
+
+body {
+    font-family: "DIN Pro Next";
+}
+
+
+img {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.header {
+
+}
+
+.main {
+    margin-bottom: 3rem;
+}
+
+.main .last-chance-east {
+    margin-bottom: 1rem;
+}
+
+.main .menu ul {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-row-gap: 1rem;
+    justify-content: space-between;
+    text-align: center;
+    font-size: .6rem;
+    padding: 2rem 0 1rem 0;
+    border-bottom: 3px solid #000;
+    margin: 0 auto 1.5rem auto;
+}
+
+@media screen and (min-width: 540px ){
+    .main .menu ul {
+    font-size: 1rem;
+    }
+}
+
+.main .menu ul li:nth-child(5){
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+
+@media screen and (min-width: 992px ){
+    .main .menu ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
+    grid-row-gap: 0;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1rem;
+    padding: 2rem 0 1rem 0;
+    border-bottom: 3px solid #000;
+    }
+
+    .main .menu ul li:nth-child(5){
+        grid-row: unset;
+        grid-column: unset;
+    }
+}
+
+.footer {
+    background-image: url('../img/banners_BOTsmall.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 40vh;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 768px){
+    .footer {
+        background-image: url('../img/banners_BOT.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 39vh;
+        max-width: 100%;
+    }
+}
+
+.footer .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .container h2 {
+    font-family: "DIN Pro Next";
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    letter-spacing: .1rem;
+}
+
+.footer .container .oficial {
+    margin-top: 1rem;
+    border: 1px solid white;
+    padding: .5rem 1rem;
+}
+
+@media screen and (min-width: 500px){
+    .footer .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .footer .container h2 {
+        font-size: 1.4rem;
+    }
+
+    .footer .container .oficial {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .footer .container h2 {
+        font-size: 2.2rem;
+    }
+}
+
+.footer .container .oficial a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .container .oficial a:hover {
+    text-decoration: underline;
+}
+
+
+/* ESTILOS DEL ARCHIVO CROSS CONFERENCE ROUNDS */
+
+.main .rounds {
+    display: flex;
+    width: 80%;
+    margin-bottom: 1.2rem;
+}
+
+.main .rounds a {
+    flex-shrink: 1;
+    border: 2px solid #0c2461;
+    padding: .2rem .3rem;
+    color: #0c2461;
+    border-radius: initial;
+    font-size: .9rem;
+    margin-right: .5rem;
+}
+
+.main .tabla {
+    font-size: .6rem;
+    border-collapse: separate;
+    border-spacing: 10px 0;
+    width: 78%;
+    text-align: center;
+}
+
+@media screen and (min-width: 992px){
+    .main .tabla {
+        font-size: 1rem;
+    }
+}
+
+.main .tabla thead tr {
+    color: white;
+    font-weight: normal;
+}
+
+.main .tabla thead tr td {
+    border-radius: 5px;
+    background: #0c2461;
+}
+
+
+/* ESTILOS DEL ARCHIVO eMLS CUP STANDINGS */
+
+.main .tabla tbody tr{
+    text-align: left;
+}
