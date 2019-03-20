@@ -170,6 +170,19 @@ img {
     }
 }
 
+@media screen and (min-width: 1350px ){
+    .text-standings {
+        width: 70%;
+    }
+    
+    .text-standings h2 {
+        color: #103260;
+        font-size: 3rem;
+        text-align: left;
+        margin-left: 1.5rem;
+    }
+}
+
 .footer {
     background-image: url('../img/banners_BOTsmall.jpg');
     background-repeat: repeat;
@@ -264,7 +277,8 @@ img {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
 }
 
 .main .rounds a {
@@ -292,6 +306,18 @@ img {
 
     .main .rounds a {
         font-size: .9rem;
+    }
+}
+
+@media screen and (min-width: 1350px ){
+    .main .rounds {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1550px ){
+    .main .rounds a {
+        margin-left: 1.5rem;
     }
 }
 
