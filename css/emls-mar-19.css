@@ -40,13 +40,14 @@ img {
     width: 95%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-column-gap: 2rem;
     grid-row-gap: 1rem;
     justify-content: space-between;
     text-align: center;
     font-size: .6rem;
     padding: 2rem 0 1rem 0;
     border-bottom: 3px solid #000;
-    margin: 0 auto 1.5rem auto;
+    margin: 0 auto .5rem auto;
 }
 
 @media screen and (min-width: 540px ){
@@ -60,6 +61,25 @@ img {
     grid-column: 3 / 4;
 }
 
+.main .menu ul li:nth-child(1) a,
+.main .menu ul li:nth-child(2) a{
+    font-size: .5rem;
+}
+
+@media screen and (min-width: 400px ) {
+    .main .menu ul li:nth-child(1) a,
+    .main .menu ul li:nth-child(2) a {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (min-width: 540px ){
+    .main .menu ul li:nth-child(1) a,
+    .main .menu ul li:nth-child(2) a {
+        font-size: 1rem;
+    }
+}
+
 @media screen and (min-width: 992px ){
     .main .menu ul {
     display: grid;
@@ -67,7 +87,8 @@ img {
     grid-row-gap: 0;
     justify-content: space-between;
     text-align: center;
-    font-size: 1rem;
+    align-items: center;
+    font-size: 1.1rem;
     padding: 2rem 0 1rem 0;
     border-bottom: 3px solid #000;
     }
@@ -75,6 +96,79 @@ img {
     .main .menu ul li:nth-child(5){
         grid-row: unset;
         grid-column: unset;
+    }
+
+    .main .menu ul li:first-child a{
+        font-size: .85rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .main .menu ul li:first-child a{
+        font-size: 1rem;
+    }
+}
+
+.main .menu ul li {
+    padding: .2rem;
+    background: #0c2461;
+    border-radius: 0 8px 8px 0;
+    list-style: none;
+}
+
+.main .menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0;
+}
+
+.main .menu ul li:hover {
+    opacity: .8;
+}
+
+.main .menu ul .activo {
+    background: #000;
+}
+
+.main .menu ul .activo:hover a {
+    color: #fff;
+}
+
+
+
+/* ENCABEZADO */
+
+.text-standings {
+    width: 100%;
+}
+
+.text-standings h2 {
+    font-family: "DIN Pro Next";
+    color: #0c2461;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 600px ){
+    .text-standings {
+        width: 80%;
+    }
+    
+    .text-standings h2 {
+        color: #0c2461;
+        font-size: 2rem;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 768px ){
+    .text-standings {
+        width: 80%;
+    }
+    
+    .text-standings h2 {
+        font-size: 3rem;
     }
 }
 
@@ -246,7 +340,7 @@ img {
     background: #0c2461;
 }
 
-.main .tabla tbody tr td:first-child {
+.main .tabla tbody tr td:nth-child(2) {
     font-family: "DIN Pro Next";
 }
 
@@ -254,30 +348,30 @@ img {
     font-family: "Alte DIN";
 }
 
-.main .tabla tbody tr:hover td:first-child {
+.main .tabla tbody tr:hover td:nth-child(2) {
     background: lightslategray;
     color: white;
 }
 
-.main .tabla tbody tr:hover td:nth-child(2) {
+.main .tabla tbody tr:hover td:nth-child(3) {
     background: #214D59;
     color: white;
 }
 
-.main .tabla tbody tr:hover td:nth-child(3),
-.main .tabla tbody tr:hover td:nth-child(6) {
+.main .tabla tbody tr:hover td:nth-child(4),
+.main .tabla tbody tr:hover td:nth-child(7) {
     background: #27ae60;
     color: white;
 }
 
-.main .tabla tbody tr:hover td:nth-child(4),
-.main .tabla tbody tr:hover td:nth-child(8) {
+.main .tabla tbody tr:hover td:nth-child(5),
+.main .tabla tbody tr:hover td:nth-child(9) {
     background: #2980b9;
     color: white;
 }
 
-.main .tabla tbody tr:hover td:nth-child(5),
-.main .tabla tbody tr:hover td:nth-child(7) {
+.main .tabla tbody tr:hover td:nth-child(6),
+.main .tabla tbody tr:hover td:nth-child(8) {
     background: #9E2F24;
     color: white;
 }
