@@ -29,11 +29,15 @@ img {
 }
 
 .main {
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
 }
 
 .main .last-chance-east {
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.emlscup-final {
+    margin-top: 4rem;
 }
 
 .main .menu ul {
@@ -183,93 +187,12 @@ img {
     }
 }
 
-.footer {
-    background-image: url('../img/banners_BOTsmall.jpg');
-    background-repeat: repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 40vh;
-    max-width: 100%;
-}
-
-@media screen and (min-width: 768px){
-    .footer {
-        background-image: url('../img/banners_BOT.png');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        height: 39vh;
-        max-width: 100%;
-    }
-}
-
-.footer .container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.footer .container h2 {
-    font-family: "DIN Pro Next";
-    font-size: 1.4rem;
-    padding: 0;
-    letter-spacing: .1rem;
-}
-
-.footer .container .oficial {
-    border: 1px solid white;
-    padding: .5rem 1rem;
-}
-
-.footer .container .play {
-    margin-bottom: 2rem;
-    -webkit-margin-before: 3rem;
-    margin-top: 3rem;
-}
-
-@media screen and (min-width: 516px){
-    .footer .container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    .footer .container h2 {
-        font-size: 1.4rem;
-    }
-
-    .footer .container .play {
-        margin-bottom: 0;
-        -webkit-margin-before: 0;
-        margin-top: 0;
-    }
-}
-
 @media screen and (min-width: 992px){
-    .footer .container h2 {
-        font-size: 2.2rem;
-    }
-
     .main .menu ul li.activo {
         grid-column: unset;
         grid-row: unset;
     }
 }
-
-.footer .container .oficial a {
-    text-decoration: none;
-    color: white;
-}
-
-.footer .container .oficial a:hover {
-    text-decoration: underline;
-}
-
 
 /* ESTILOS DEL ARCHIVO CROSS CONFERENCE ROUNDS */
 
